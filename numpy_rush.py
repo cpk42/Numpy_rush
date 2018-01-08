@@ -28,8 +28,8 @@ def gen_arr(r, c):
             mtrx[i][x] = rng[count]
             count += 1
     return (mtrx)
-                
-    
+
+
 matrx = gen_arr(10,10)
 
 
@@ -69,10 +69,10 @@ def extract_arr(arr):
         x = 0
         for i in range(5):
             y = 7
-            for j in range(5):
+            for j in range(4):
                 grid[i][j] = arr[x][y]
                 y += 1
-            
+
             x += 1
         return (grid)
 
@@ -92,9 +92,9 @@ def bind_vectors(m, n):
     while i < m:
         tmp = np.vstack((matrix, tmp))
         i += 1
-        
+
     return (tmp)
-    
+
 
 matrx3 = bind_vectors(10, 10)
 mpl.imshow(matrx3)
@@ -136,4 +136,3 @@ def rgb2gray(rgb):
 #mpl.imshow(image)
 #image = rgb2gray(image)
 #mpl.imshow(image,cmap='gray')
-
